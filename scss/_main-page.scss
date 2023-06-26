@@ -513,3 +513,30 @@ h1 {
         color: var(--gray-80);
     }
 }
+
+.clients {
+    padding-bottom: 180px
+}
+
+.clients-title {
+    @extend %H1-M;
+    padding-bottom: 64px;
+    text-align: center;
+}
+
+.clients-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.clients-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}

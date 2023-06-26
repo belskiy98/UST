@@ -246,7 +246,7 @@ h1 {
   aspect-ratio: auto 947/640;
 }
 
-.advantages__title, .portfolio__title, .offers__title, .about__title {
+.clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
   font-size: 54px;
   font-weight: 700;
   line-height: 60px;
@@ -518,6 +518,32 @@ h1 {
 }
 .advantages-item__text {
   color: var(--gray-80);
+}
+
+.clients {
+  padding-bottom: 180px;
+}
+
+.clients-title {
+  padding-bottom: 64px;
+  text-align: center;
+}
+
+.clients-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.clients-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
