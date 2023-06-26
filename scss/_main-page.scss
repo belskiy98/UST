@@ -466,3 +466,50 @@ h1 {
     justify-content: center;
     gap: 24px;
 }
+
+.advantages {
+    padding-top: 74px;
+    padding-bottom: 180px
+}
+
+.advantages__title {
+    @extend %H1-M;
+    padding-bottom: 24px;
+}
+
+.advantages__text {
+    font-size: var(--font-size-secondary);
+    line-height: var(--line-height-secondary);
+    color: var(--gray-80);
+}
+
+.advantages-row {
+    padding-top: 54px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+}
+
+.advantages-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__title {
+        font-size: var(--font-size-secondary);
+        line-height: 32px;
+        color: var(--blue-dark);
+        font-weight: 500;
+    }
+
+    &__text {
+        color: var(--gray-80);
+    }
+}
