@@ -418,9 +418,18 @@ h1 {
     flex-direction: column;
     gap: 4px;
 
+    &__img {
+        overflow: hidden;
+    }
+
     &__img img {
         width: 100%;
         height: auto;
+        @extend %transition;
+    }
+
+    &__img img:hover {
+        transform: scale(115%);
     }
 
     &__link a {
