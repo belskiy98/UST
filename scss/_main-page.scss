@@ -793,3 +793,52 @@ h1 {
     font-size: 16px;
     letter-spacing: 0.32px;
 }
+
+.faq {
+    padding-bottom: 180px;
+}
+
+.faq__title {
+    @extend %H1-M;
+    padding-bottom: 64px;
+}
+
+.accordion-tab {
+    border-bottom: 2px solid var(--gray-20);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    &__short {
+        display: flex;
+        justify-content: space-between;
+        @extend %H4;
+        color: var(--gray-80);
+    }
+
+    &__short:hover {
+        cursor: pointer;
+    }
+
+    &__full {
+        color: var(--gray-60);
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    &__full p {
+        margin: 0;
+        padding-top: 22px;
+        padding-right: 350px;
+    }
+}
+
+.accordion-tab__short::after {
+    content: url('../img/accord-open.svg');
+}
+
+.accordion-tab--open .accordion-tab__short::after {
+    content: url('../img/accord-close.svg');
+}
+
+.accordion-tab--open .accordion-tab__full {
+    max-height: 100vh;
+}

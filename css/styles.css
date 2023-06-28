@@ -193,7 +193,7 @@ h1 {
   text-transform: uppercase;
 }
 
-.contact-info__title, .contact-col__name, .section-title, .experience-items__text {
+.accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
   font-weight: 325;
   font-size: 26px;
   line-height: 32px;
@@ -246,7 +246,7 @@ h1 {
   aspect-ratio: auto 947/640;
 }
 
-.conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
+.faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
   font-size: 54px;
   font-weight: 700;
   line-height: 60px;
@@ -778,6 +778,50 @@ h1 {
 }
 .submit-btn__blue:active {
   transform: scale(95%);
+}
+
+.faq {
+  padding-bottom: 180px;
+}
+
+.faq__title {
+  padding-bottom: 64px;
+}
+
+.accordion-tab {
+  border-bottom: 2px solid var(--gray-20);
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.accordion-tab__short {
+  display: flex;
+  justify-content: space-between;
+  color: var(--gray-80);
+}
+.accordion-tab__short:hover {
+  cursor: pointer;
+}
+.accordion-tab__full {
+  color: var(--gray-60);
+  max-height: 0;
+  overflow: hidden;
+}
+.accordion-tab__full p {
+  margin: 0;
+  padding-top: 22px;
+  padding-right: 350px;
+}
+
+.accordion-tab__short::after {
+  content: url("../img/accord-open.svg");
+}
+
+.accordion-tab--open .accordion-tab__short::after {
+  content: url("../img/accord-close.svg");
+}
+
+.accordion-tab--open .accordion-tab__full {
+  max-height: 100vh;
 }
 
 /*# sourceMappingURL=styles.css.map */
