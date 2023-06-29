@@ -851,3 +851,135 @@ h1 {
 .accordion-tab--open .accordion-tab__full {
     max-height: 100vh;
 }
+
+.footer {
+    padding-top: 64px;
+    padding-bottom: 22px;
+    background-color: var(--blue-100);
+}
+
+.footer-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 156px;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &__info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1 1;
+    }
+}
+
+.russia-info {
+    &__title {
+        @extend %H6;
+        color: var(--gray-10);
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-top: 16px;
+        @extend %TXT-S;
+        color: var(--gray-10);
+    }
+}
+
+.slovenia-info {
+    &__title {
+        @extend %H6;
+        color: var(--gray-10);
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-top: 16px;
+        @extend %TXT-S;
+        color: var(--gray-10);
+    }
+}
+
+.footer-block__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1 1;
+    flex-wrap: wrap;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+
+    & li {
+        list-style-type: none;
+    }
+
+    &__item {
+        text-decoration: none;
+        font-size: 16px;
+        line-height: normal;
+        letter-spacing: 0.32px;
+        text-transform: uppercase;
+        color: var(--gray-20);
+        @extend %transition;
+    }
+
+    &__item:hover {
+        color: var(--gray-10);
+    }
+}
+
+.footer-additionally {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 72px;
+
+    &__dev {
+       @extend %TXT-S;
+       color: var(--gray-10);
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 32px;
+        padding-right: 270px;
+        @extend %transition;
+    }
+
+    &__link a:hover {
+        color: var(--gray-10);
+    }
+}
+
+.confidentiality__link {
+    border-right: 2px solid var(--gray-60);
+    padding-right: 32px;
+}
+
+.confidentiality__link a,
+.cookies__policy a {
+    color: var(--gray-20);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    text-decoration: none;
+    @extend %transition;
+}
