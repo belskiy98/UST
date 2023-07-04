@@ -13,4 +13,19 @@ window.addEventListener("DOMContentLoaded", function(){
             tabRoot.classList.toggle("accordion-tab--open");
         });
     }
+
+    //mobile menu
+
+    let btnMenu = document.querySelector("#open-menu-btn");
+    btnMenu.addEventListener("click", function() {
+
+        let mobileMenu = document.querySelector(".mobile-menu");
+        mobileMenu.classList.add("visible");
+    });
+
+	document.body.addEventListener("click", function(e){
+		if(!e.target.closest("#open-menu-btn")){
+			document.querySelector(".mobile-menu").classList.remove("visible");
+		}
+	});
 });
