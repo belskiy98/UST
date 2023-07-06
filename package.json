@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "sass --watch scss/styles.scss ./css/styles.css",
-    "build": "sass scss/styles.scss ./css/styles.css"
+    "watch": "sass --watch scss/_team-page.scss ./css/_team-page.css",
+    "build": "sass scss/_team-page.scss ./css/_team-page.css"
   },
   "author": "",
   "license": "ISC",
