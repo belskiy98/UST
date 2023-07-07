@@ -1,249 +1,125 @@
-@import "_variables";
-
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    font-size: var(--base-font-size);
-    line-height: var(--base-line-heignt);
-    background-color: var(--bg-color);
-    color: var(--text-color);
-}
-
-@media (max-width:576px) {
-    body {
-        --base-font-size: 12px;
-        --base-line-heignt: 16px;
-        --font-size-secondary: 14px;
-        --line-height-secondary: 20px;
-    }
-}
-
-%H1L {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 68px;
-    line-height: 82px;
-    text-transform: uppercase;
-}
-
-%H1-M {
-    font-size: 54px;
-    font-weight: 700;
-    line-height: 60px;
-    color: var(--blue-100);
-}
-
-%H4 {
-    font-weight: 325;
-    font-size: 26px;
-    line-height: 32px;
-    font-weight: 500;
-}
-
-%TXT-S {
-    font-size: 16px;
-    font-weight: 325;
-    line-height: 22px;
-}
-
-%H6 {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    text-transform: uppercase;
-}
-
-%H3 {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 42px;
-}
-
-%TXT-XS {
-    font-size: 11px;
-    line-height: 20px;
-}
-
-@media (max-width:576px) {
-    %H1L {
-        font-size: 56px;
-        font-weight: 700;
-        line-height: normal;
+.body-team-page {
+    .header-wrapper {
+        background-color: black;
+        background-image: url(../img/team-hero-bg-jpg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 
-    %H1-M {
-        font-size: 30px;
-        line-height: 32px;
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        padding-top: 10px;
+        background: none;
     }
 
-    %H4 {
-        font-size: 20px;
-        font-weight: 325;
-        line-height: 24px;
+    .logo-block {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
     }
 
-    %TXT-S {
-        font-size: 12px;
+    .logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+    }
+    
+    .logo__title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        color: var(--gray-20);
+    }
+    
+    .logo__description {
         font-weight: 400;
-        line-height: 16px;
+        font-size: 15px;
+        line-height: 18px;
+        color: var(--gray-60);
     }
 
-    %H6 {
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 14px;
-        letter-spacing: 0.24px;
+    nav {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+    
+    
+    .header-nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 16px;
+        margin: 0;
+        padding: 0;
+    
+        li {
+            list-style: none;
+        }
+    }
+    
+    .header-controls:hover {
+        cursor: pointer;
     }
 
-    %TXT-XS {
-        font-size: 11px;
-        line-height: 14px;
+    .nav-item {
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: var(--gray-20);
+        @extend %transition;
     }
-}
-
-.wrapper {
-    width: 100%;
-}
-
-.header-wrapper {
-    background-color: black;
-    background-image: url(../img/team-hero-bg-jpg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    padding-top: 10px;
-}
-
-.logo-block {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
-
-.logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 8px;
-}
-
-.logo__title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    color: var(--gray-20);
-}
-
-.logo__description {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    color: var(--gray-60);
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-}
-
-
-.header-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 16px;
-    margin: 0;
-    padding: 0;
-
-    li {
-        list-style: none;
+    
+    .nav-item:hover {
+        color: var(--gray-10);
     }
-}
+    
+    .nav-item::after {
+        content: "";
+        display: block;
+        position: relative;
+        top: 5px;
+        width: 0%;
+        background-color: var(--gray-10);
+        height: 1px;
+        @extend %transition;
+    }
 
-.header-controls:hover {
-    cursor: pointer;
-}
+    .nav-item:hover::after {
+        width: 100%;
+    }
+    
+    .header-controls {
+        display: flex;
+        flex-direction: row;
+        gap: 26px;
+        align-items: center;
+    }
 
-%transition {
-    transition: all 300ms ease;
-}
+    .hero__block {
+        padding-top: 110px;
+        padding-bottom: 156px;
+    }
 
-.nav-item {
-    font-size: 16px;
-    line-height: 19px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--gray-20);
-    @extend %transition;
-}
+    .section-title {
+        color: var(--blue-20);
+        padding-bottom: 10px;
+    }
 
-.nav-item:hover {
-    color: var(--gray-10);
-}
+    h1 {
+        padding-top: 0;
+        padding-bottom: 16px;
+    }
 
-.nav-item::after {
-    content: "";
-    display: block;
-    position: relative;
-    top: 5px;
-    width: 0%;
-    background-color: var(--gray-10);
-    height: 1px;
-    @extend %transition;
-}
-
-.nav-item:hover::after {
-    width: 100%;
-}
-
-.header-controls {
-    display: flex;
-    flex-direction: row;
-    gap: 26px;
-    align-items: center;
-}
-
-.hero__block {
-    padding-top: 110px;
-    padding-bottom: 156px;
-}
-
-.section-title {
-    @extend %H4;
-    color: var(--gray-20);
-    padding-bottom: 10px;
-}
-
-h1 {
-    margin: 0;
-    padding-bottom: 16px;
-    font-size: 54px;
-    line-height: 64px;
-    letter-spacing: 0.02em;
-    color: var(--gray-10);
-    font-family: var(--font-family-secondary);
-}
-
-.hero__text {
-    line-height: var(--line-height-secondary);
-    font-weight: 400;
-    color: var(--gray-20);
+    .hero__text {
+        padding-bottom: 0;
+    }
 }

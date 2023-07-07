@@ -24,6 +24,88 @@ body {
   --font-family-secondary: "Inter", sans-serif;
 }
 
+.body-team-page .nav-item::after, .body-team-page .nav-item, .confidentiality__link a,
+.cookies__policy a, .footer-additionally__link, .footer-social__img svg, .footer-nav__item, .accordion-tab__short::after, .accordion-tab__short, .submit-btn__blue, .submit-block__link a, .input-aria textarea::placeholder, .input-aria textarea, .labeled-input-container input::placeholder, .labeled-input-container input, .contact-info__img svg, .portfolio-btns__blue, .portfolio-btns__contour, .portfolio-card__img img, .btn-all, .about-btn__blue, .about-btn__contour, .hero-btn, .nav-item::after, .nav-item {
+  transition: all 300ms ease;
+}
+
+.experience-items__years {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 68px;
+  line-height: 82px;
+  text-transform: uppercase;
+}
+
+.faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 60px;
+  color: var(--blue-100);
+}
+
+.accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
+  font-weight: 325;
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+.footer-additionally__dev, .slovenia-info__contact, .russia-info__contact, .form-block__text, .contact-info__desc {
+  font-size: 16px;
+  font-weight: 325;
+  line-height: 22px;
+}
+
+.slovenia-info__title, .russia-info__title, .russia-block__title, .slovenia-block__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.form-block__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.submit-block__text, .text-required {
+  font-size: 11px;
+  line-height: 20px;
+}
+
+@media (max-width: 576px) {
+  .experience-items__years {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
+    font-size: 20px;
+    font-weight: 325;
+    line-height: 24px;
+  }
+  .footer-additionally__dev, .slovenia-info__contact, .russia-info__contact, .form-block__text, .contact-info__desc {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .slovenia-info__title, .russia-info__title, .russia-block__title, .slovenia-block__title {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.24px;
+  }
+  .submit-block__text, .text-required {
+    font-size: 11px;
+    line-height: 14px;
+  }
+}
 html, body {
   margin: 0;
   padding: 0;
@@ -190,7 +272,7 @@ nav {
   cursor: pointer;
 }
 
-.confidentiality__link a,
+.body-team-page .nav-item::after, .body-team-page .nav-item, .confidentiality__link a,
 .cookies__policy a, .footer-additionally__link, .footer-social__img svg, .footer-nav__item, .accordion-tab__short::after, .accordion-tab__short, .submit-btn__blue, .submit-block__link a, .input-aria textarea::placeholder, .input-aria textarea, .labeled-input-container input::placeholder, .labeled-input-container input, .contact-info__img svg, .portfolio-btns__blue, .portfolio-btns__contour, .portfolio-card__img img, .btn-all, .about-btn__blue, .about-btn__contour, .hero-btn, .nav-item::after, .nav-item {
   transition: all 300ms ease;
 }
@@ -1439,6 +1521,108 @@ h1 {
     color: var(--pink-80);
     text-decoration-line: underline;
   }
+}
+.body-team-page .header-wrapper {
+  background-color: black;
+  background-image: url(../img/team-hero-bg-jpg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.body-team-page header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+  background: none;
+}
+.body-team-page .logo-block {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.body-team-page .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+.body-team-page .logo__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--gray-20);
+}
+.body-team-page .logo__description {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--gray-60);
+}
+.body-team-page nav {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.body-team-page .header-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+.body-team-page .header-nav li {
+  list-style: none;
+}
+.body-team-page .header-controls:hover {
+  cursor: pointer;
+}
+.body-team-page .nav-item {
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--gray-20);
+}
+.body-team-page .nav-item:hover {
+  color: var(--gray-10);
+}
+.body-team-page .nav-item::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 5px;
+  width: 0%;
+  background-color: var(--gray-10);
+  height: 1px;
+}
+.body-team-page .nav-item:hover::after {
+  width: 100%;
+}
+.body-team-page .header-controls {
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+  align-items: center;
+}
+.body-team-page .hero__block {
+  padding-top: 110px;
+  padding-bottom: 156px;
+}
+.body-team-page .section-title {
+  color: var(--blue-20);
+  padding-bottom: 10px;
+}
+.body-team-page h1 {
+  padding-top: 0;
+  padding-bottom: 16px;
+}
+.body-team-page .hero__text {
+  padding-bottom: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
