@@ -24,7 +24,7 @@ body {
   --font-family-secondary: "Inter", sans-serif;
 }
 
-.body-team-page .position-col__btn, .body-team-page .teams-card, .body-team-page .nav-item::after, .body-team-page .nav-item, .confidentiality__link a,
+.position-col__btn, .teams-card, .confidentiality__link a,
 .cookies__policy a, .footer-additionally__link, .footer-social__img svg, .footer-nav__item, .accordion-tab__short::after, .accordion-tab__short, .submit-btn__blue, .submit-block__link a, .input-aria textarea::placeholder, .input-aria textarea, .labeled-input-container input::placeholder, .labeled-input-container input, .contact-info__img svg, .portfolio-btns__blue, .portfolio-btns__contour, .portfolio-card__img img, .btn-all, .about-btn__blue, .about-btn__contour, .hero-btn, .nav-item::after, .nav-item {
   transition: all 300ms ease;
 }
@@ -37,27 +37,27 @@ body {
   text-transform: uppercase;
 }
 
-.body-team-page .position-col__title, .body-team-page .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
+.position-col__title, .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
   font-size: 54px;
   font-weight: 700;
   line-height: 60px;
   color: var(--blue-100);
 }
 
-.body-team-page .position-col__name, .accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
+.position-col__name, .accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
   font-weight: 325;
   font-size: 26px;
   line-height: 32px;
   font-weight: 500;
 }
 
-.body-team-page .teams-card__job, .footer-additionally__dev, .slovenia-info__contact, .russia-info__contact, .form-block__text, .contact-info__desc {
+.teams-card__job, .footer-additionally__dev, .slovenia-info__contact, .russia-info__contact, .form-block__text, .contact-info__desc {
   font-size: 16px;
   font-weight: 325;
   line-height: 22px;
 }
 
-.body-team-page .teams-card__name, .slovenia-info__title, .russia-info__title, .russia-block__title, .slovenia-block__title {
+.teams-card__name, .slovenia-info__title, .russia-info__title, .russia-block__title, .slovenia-block__title {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -81,21 +81,21 @@ body {
     font-weight: 700;
     line-height: normal;
   }
-  .body-team-page .position-col__title, .body-team-page .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
+  .position-col__title, .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
     font-size: 30px;
     line-height: 32px;
   }
-  .body-team-page .position-col__name, .accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
+  .position-col__name, .accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
     font-size: 20px;
     font-weight: 325;
     line-height: 24px;
   }
-  .body-team-page .teams-card__job, .footer-additionally__dev, .slovenia-info__contact, .russia-info__contact, .form-block__text, .contact-info__desc {
+  .teams-card__job, .footer-additionally__dev, .slovenia-info__contact, .russia-info__contact, .form-block__text, .contact-info__desc {
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
   }
-  .body-team-page .teams-card__name, .slovenia-info__title, .russia-info__title, .russia-block__title, .slovenia-block__title {
+  .teams-card__name, .slovenia-info__title, .russia-info__title, .russia-block__title, .slovenia-block__title {
     font-size: 12px;
     font-weight: 500;
     line-height: 14px;
@@ -272,7 +272,7 @@ nav {
   cursor: pointer;
 }
 
-.body-team-page .position-col__btn, .body-team-page .teams-card, .body-team-page .nav-item::after, .body-team-page .nav-item, .confidentiality__link a,
+.position-col__btn, .teams-card, .confidentiality__link a,
 .cookies__policy a, .footer-additionally__link, .footer-social__img svg, .footer-nav__item, .accordion-tab__short::after, .accordion-tab__short, .submit-btn__blue, .submit-block__link a, .input-aria textarea::placeholder, .input-aria textarea, .labeled-input-container input::placeholder, .labeled-input-container input, .contact-info__img svg, .portfolio-btns__blue, .portfolio-btns__contour, .portfolio-card__img img, .btn-all, .about-btn__blue, .about-btn__contour, .hero-btn, .nav-item::after, .nav-item {
   transition: all 300ms ease;
 }
@@ -369,7 +369,7 @@ h1 {
   text-transform: uppercase;
 }
 
-.body-team-page .position-col__name, .accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
+.position-col__name, .accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
   font-weight: 325;
   font-size: 26px;
   line-height: 32px;
@@ -382,7 +382,7 @@ h1 {
     font-weight: 700;
     line-height: normal;
   }
-  .body-team-page .position-col__name, .accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
+  .position-col__name, .accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
     font-size: 20px;
     font-weight: 325;
     line-height: 24px;
@@ -491,7 +491,7 @@ h1 {
   aspect-ratio: auto 947/640;
 }
 
-.body-team-page .position-col__title, .body-team-page .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
+.position-col__title, .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
   font-size: 54px;
   font-weight: 700;
   line-height: 60px;
@@ -499,7 +499,7 @@ h1 {
 }
 
 @media (max-width: 576px) {
-  .body-team-page .position-col__title, .body-team-page .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
+  .position-col__title, .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
     font-size: 30px;
     line-height: 32px;
   }
@@ -1004,13 +1004,13 @@ h1 {
   color: var(--gray-20);
 }
 
-.body-team-page .teams-card__job, .footer-additionally__dev, .slovenia-info__contact, .russia-info__contact, .form-block__text, .contact-info__desc {
+.teams-card__job, .footer-additionally__dev, .slovenia-info__contact, .russia-info__contact, .form-block__text, .contact-info__desc {
   font-size: 16px;
   font-weight: 325;
   line-height: 22px;
 }
 
-.body-team-page .teams-card__name, .slovenia-info__title, .russia-info__title, .russia-block__title, .slovenia-block__title {
+.teams-card__name, .slovenia-info__title, .russia-info__title, .russia-block__title, .slovenia-block__title {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -1029,12 +1029,12 @@ h1 {
 }
 
 @media (max-width: 576px) {
-  .body-team-page .teams-card__job, .footer-additionally__dev, .slovenia-info__contact, .russia-info__contact, .form-block__text, .contact-info__desc {
+  .teams-card__job, .footer-additionally__dev, .slovenia-info__contact, .russia-info__contact, .form-block__text, .contact-info__desc {
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
   }
-  .body-team-page .teams-card__name, .slovenia-info__title, .russia-info__title, .russia-block__title, .slovenia-block__title {
+  .teams-card__name, .slovenia-info__title, .russia-info__title, .russia-block__title, .slovenia-block__title {
     font-size: 12px;
     font-weight: 500;
     line-height: 14px;
@@ -1535,6 +1535,7 @@ h1 {
   background-size: cover;
   background-position: center;
 }
+
 .body-team-page header {
   display: flex;
   flex-direction: row;
@@ -1544,97 +1545,33 @@ h1 {
   padding-top: 10px;
   background: none;
 }
-.body-team-page .logo-block {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-}
-.body-team-page .logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 8px;
-}
-.body-team-page .logo__title {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  color: var(--gray-20);
-}
-.body-team-page .logo__description {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
-  color: var(--gray-60);
-}
-.body-team-page nav {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-}
-.body-team-page .header-nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 16px;
-  margin: 0;
-  padding: 0;
-}
-.body-team-page .header-nav li {
-  list-style: none;
-}
-.body-team-page .header-controls:hover {
-  cursor: pointer;
-}
-.body-team-page .nav-item {
-  font-size: 16px;
-  line-height: 19px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: var(--gray-20);
-}
-.body-team-page .nav-item:hover {
-  color: var(--gray-10);
-}
-.body-team-page .nav-item::after {
-  content: "";
-  display: block;
-  position: relative;
-  top: 5px;
-  width: 0%;
-  background-color: var(--gray-10);
-  height: 1px;
-}
-.body-team-page .nav-item:hover::after {
-  width: 100%;
-}
-.body-team-page .header-controls {
-  display: flex;
-  flex-direction: row;
-  gap: 26px;
-  align-items: center;
-}
+
 .body-team-page .hero__block {
   padding-top: 110px;
   padding-bottom: 156px;
 }
+
 .body-team-page .section-title {
   color: var(--blue-20);
   padding-bottom: 10px;
 }
+
 .body-team-page h1 {
   padding-top: 0;
   padding-bottom: 16px;
 }
+
 .body-team-page .hero__text {
   padding-bottom: 0;
+  padding-top: 0;
 }
-.body-team-page .teams {
+
+.teams {
   padding-top: 180px;
   padding-bottom: 180px;
 }
-.body-team-page .teams-row__one {
+
+.teams-row__one {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1642,17 +1579,20 @@ h1 {
   gap: 30px;
   flex-wrap: wrap;
 }
-.body-team-page .teams-row__description {
+
+.teams-row__description {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-.body-team-page .teams__text {
+
+.teams__text {
   color: var(--gray-80);
   font-size: var(--font-size-secondary);
   line-height: var(--line-height-secondary);
 }
-.body-team-page .teams__gallary {
+
+.teams__gallary {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1660,17 +1600,18 @@ h1 {
   flex-wrap: wrap;
   flex: 1 1;
 }
-.body-team-page .teams-card {
+
+.teams-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 4px;
 }
-.body-team-page .teams-card__img {
+.teams-card__img {
   position: relative;
 }
-.body-team-page .teams-card__img::after {
+.teams-card__img::after {
   position: absolute;
   content: url(../img/bx_bxl-linkedin.svg);
   right: 0;
@@ -1679,55 +1620,60 @@ h1 {
   height: 32px;
   transform: translate(-24px, 24px);
 }
-.body-team-page .teams-card__img img {
+.teams-card__img img {
   width: 100%;
   height: auto;
   aspect-ratio: auto 330/330;
 }
-.body-team-page .teams-card__name {
+.teams-card__name {
   color: var(--blue-100);
 }
-.body-team-page .teams-card__job {
+.teams-card__job {
   color: var(--gray-80);
 }
-.body-team-page .teams-card:hover {
+
+.teams-card:hover {
   transform: scale(105%);
 }
-.body-team-page .teams-row__second {
+
+.teams-row__second {
   padding-top: 78px;
 }
-.body-team-page .teams-row__third {
+
+.teams-row__third {
   padding-top: 78px;
 }
-.body-team-page .teams-row__third .teams__gallary {
+.teams-row__third .teams__gallary {
   justify-content: flex-start;
   gap: 40px;
 }
-.body-team-page .open-position {
+
+.open-position {
   background-image: url(../img/team-position-bg.jpg);
   background-size: cover;
   padding-top: 348px;
   padding-bottom: 252px;
 }
-.body-team-page .position-col__name {
+
+.position-col__name {
   color: var(--gray-20);
   padding-bottom: 8px;
 }
-.body-team-page .position-col__title {
+.position-col__title {
   color: var(--gray-10);
   padding-bottom: 64px;
 }
-.body-team-page .position-col__btn {
+.position-col__btn {
   font-family: "Montserrat", sans-serif;
   background: var(--blue-light);
   border: none;
   outline: none;
   padding: 14px 40px 14px 40px;
 }
-.body-team-page .position-col__btn:hover {
+.position-col__btn:hover {
   cursor: pointer;
 }
-.body-team-page .position-col__btn:active {
+.position-col__btn:active {
   transform: scale(95%);
 }
 

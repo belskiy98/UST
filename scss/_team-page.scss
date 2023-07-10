@@ -1,5 +1,5 @@
-.body-team-page {
-    .header-wrapper {
+
+    .body-team-page .header-wrapper {
         background-color: black;
         background-image: url(../img/team-hero-bg-jpg.jpg);
         background-repeat: no-repeat;
@@ -7,7 +7,7 @@
         background-position: center;
     }
 
-    header {
+    .body-team-page header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -17,110 +17,24 @@
         background: none;
     }
 
-    .logo-block {
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-    }
-
-    .logo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 8px;
-    }
-    
-    .logo__title {
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 29px;
-        color: var(--gray-20);
-    }
-    
-    .logo__description {
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 18px;
-        color: var(--gray-60);
-    }
-
-    nav {
-        display: flex;
-        flex-direction: row;
-        gap: 24px;
-    }
-    
-    
-    .header-nav {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 16px;
-        margin: 0;
-        padding: 0;
-    
-        li {
-            list-style: none;
-        }
-    }
-    
-    .header-controls:hover {
-        cursor: pointer;
-    }
-
-    .nav-item {
-        font-size: 16px;
-        line-height: 19px;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: var(--gray-20);
-        @extend %transition;
-    }
-    
-    .nav-item:hover {
-        color: var(--gray-10);
-    }
-    
-    .nav-item::after {
-        content: "";
-        display: block;
-        position: relative;
-        top: 5px;
-        width: 0%;
-        background-color: var(--gray-10);
-        height: 1px;
-        @extend %transition;
-    }
-
-    .nav-item:hover::after {
-        width: 100%;
-    }
-    
-    .header-controls {
-        display: flex;
-        flex-direction: row;
-        gap: 26px;
-        align-items: center;
-    }
-
-    .hero__block {
+    .body-team-page .hero__block {
         padding-top: 110px;
         padding-bottom: 156px;
     }
 
-    .section-title {
+    .body-team-page .section-title {
         color: var(--blue-20);
         padding-bottom: 10px;
     }
 
-    h1 {
+    .body-team-page h1 {
         padding-top: 0;
         padding-bottom: 16px;
     }
 
-    .hero__text {
+    .body-team-page .hero__text {
         padding-bottom: 0;
+        padding-top: 0;
     }
 
     .teams {
@@ -243,4 +157,3 @@
             padding: 14px 40px 14px 40px;
         }
     }
-}
