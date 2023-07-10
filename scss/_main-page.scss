@@ -241,6 +241,7 @@ h1 {
 
 
 @mixin btnBlue() {
+    font-family: "Montserrat", sans-serif;
     background: var(--blue-light);
     border: none;
     outline: none;
@@ -456,6 +457,7 @@ h1 {
 }
 
 @mixin btnContour() {
+    font-family: "Montserrat", sans-serif;
     background-color: transparent;
     border: 2px solid var(--blue-light);
     @extend %transition;

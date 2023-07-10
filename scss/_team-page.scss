@@ -217,4 +217,30 @@
             gap: 40px;
         }
     }
+
+    .open-position {
+        background-image: url(../img/team-position-bg.jpg);
+        background-size: cover;
+        padding-top: 348px;
+        padding-bottom: 252px;
+    }
+
+    .position-col {
+        &__name {
+            @extend %H4;
+            color: var(--gray-20);
+            padding-bottom: 8px;
+        }
+
+        &__title {
+            @extend %H1-M;
+            color: var(--gray-10);
+            padding-bottom: 64px;
+        }
+
+        &__btn {
+            @include btnBlue();
+            padding: 14px 40px 14px 40px;
+        }
+    }
 }

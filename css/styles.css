@@ -24,7 +24,7 @@ body {
   --font-family-secondary: "Inter", sans-serif;
 }
 
-.body-team-page .teams-card, .body-team-page .nav-item::after, .body-team-page .nav-item, .confidentiality__link a,
+.body-team-page .position-col__btn, .body-team-page .teams-card, .body-team-page .nav-item::after, .body-team-page .nav-item, .confidentiality__link a,
 .cookies__policy a, .footer-additionally__link, .footer-social__img svg, .footer-nav__item, .accordion-tab__short::after, .accordion-tab__short, .submit-btn__blue, .submit-block__link a, .input-aria textarea::placeholder, .input-aria textarea, .labeled-input-container input::placeholder, .labeled-input-container input, .contact-info__img svg, .portfolio-btns__blue, .portfolio-btns__contour, .portfolio-card__img img, .btn-all, .about-btn__blue, .about-btn__contour, .hero-btn, .nav-item::after, .nav-item {
   transition: all 300ms ease;
 }
@@ -37,14 +37,14 @@ body {
   text-transform: uppercase;
 }
 
-.body-team-page .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
+.body-team-page .position-col__title, .body-team-page .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
   font-size: 54px;
   font-weight: 700;
   line-height: 60px;
   color: var(--blue-100);
 }
 
-.accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
+.body-team-page .position-col__name, .accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
   font-weight: 325;
   font-size: 26px;
   line-height: 32px;
@@ -81,11 +81,11 @@ body {
     font-weight: 700;
     line-height: normal;
   }
-  .body-team-page .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
+  .body-team-page .position-col__title, .body-team-page .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
     font-size: 30px;
     line-height: 32px;
   }
-  .accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
+  .body-team-page .position-col__name, .accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
     font-size: 20px;
     font-weight: 325;
     line-height: 24px;
@@ -272,7 +272,7 @@ nav {
   cursor: pointer;
 }
 
-.body-team-page .teams-card, .body-team-page .nav-item::after, .body-team-page .nav-item, .confidentiality__link a,
+.body-team-page .position-col__btn, .body-team-page .teams-card, .body-team-page .nav-item::after, .body-team-page .nav-item, .confidentiality__link a,
 .cookies__policy a, .footer-additionally__link, .footer-social__img svg, .footer-nav__item, .accordion-tab__short::after, .accordion-tab__short, .submit-btn__blue, .submit-block__link a, .input-aria textarea::placeholder, .input-aria textarea, .labeled-input-container input::placeholder, .labeled-input-container input, .contact-info__img svg, .portfolio-btns__blue, .portfolio-btns__contour, .portfolio-card__img img, .btn-all, .about-btn__blue, .about-btn__contour, .hero-btn, .nav-item::after, .nav-item {
   transition: all 300ms ease;
 }
@@ -339,6 +339,7 @@ h1 {
 }
 
 .hero-btn {
+  font-family: "Montserrat", sans-serif;
   background: var(--blue-light);
   border: none;
   outline: none;
@@ -368,7 +369,7 @@ h1 {
   text-transform: uppercase;
 }
 
-.accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
+.body-team-page .position-col__name, .accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
   font-weight: 325;
   font-size: 26px;
   line-height: 32px;
@@ -381,7 +382,7 @@ h1 {
     font-weight: 700;
     line-height: normal;
   }
-  .accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
+  .body-team-page .position-col__name, .accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
     font-size: 20px;
     font-weight: 325;
     line-height: 24px;
@@ -490,7 +491,7 @@ h1 {
   aspect-ratio: auto 947/640;
 }
 
-.body-team-page .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
+.body-team-page .position-col__title, .body-team-page .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
   font-size: 54px;
   font-weight: 700;
   line-height: 60px;
@@ -498,7 +499,7 @@ h1 {
 }
 
 @media (max-width: 576px) {
-  .body-team-page .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
+  .body-team-page .position-col__title, .body-team-page .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
     font-size: 30px;
     line-height: 32px;
   }
@@ -522,6 +523,7 @@ h1 {
 }
 
 .about-btn__contour {
+  font-family: "Montserrat", sans-serif;
   background-color: transparent;
   border: 2px solid var(--blue-light);
   padding: 14px 50px 14px 50px;
@@ -543,6 +545,7 @@ h1 {
 }
 
 .about-btn__blue {
+  font-family: "Montserrat", sans-serif;
   background: var(--blue-light);
   border: none;
   outline: none;
@@ -780,6 +783,7 @@ h1 {
 }
 
 .portfolio-btns__contour {
+  font-family: "Montserrat", sans-serif;
   background-color: transparent;
   border: 2px solid var(--blue-light);
   padding: 14px 50px 14px 50px;
@@ -792,6 +796,7 @@ h1 {
 }
 
 .portfolio-btns__blue {
+  font-family: "Montserrat", sans-serif;
   background: var(--blue-light);
   border: none;
   outline: none;
@@ -1188,6 +1193,7 @@ h1 {
 }
 
 .submit-btn__blue {
+  font-family: "Montserrat", sans-serif;
   background: var(--blue-light);
   border: none;
   outline: none;
@@ -1696,6 +1702,33 @@ h1 {
 .body-team-page .teams-row__third .teams__gallary {
   justify-content: flex-start;
   gap: 40px;
+}
+.body-team-page .open-position {
+  background-image: url(../img/team-position-bg.jpg);
+  background-size: cover;
+  padding-top: 348px;
+  padding-bottom: 252px;
+}
+.body-team-page .position-col__name {
+  color: var(--gray-20);
+  padding-bottom: 8px;
+}
+.body-team-page .position-col__title {
+  color: var(--gray-10);
+  padding-bottom: 64px;
+}
+.body-team-page .position-col__btn {
+  font-family: "Montserrat", sans-serif;
+  background: var(--blue-light);
+  border: none;
+  outline: none;
+  padding: 14px 40px 14px 40px;
+}
+.body-team-page .position-col__btn:hover {
+  cursor: pointer;
+}
+.body-team-page .position-col__btn:active {
+  transform: scale(95%);
 }
 
 /*# sourceMappingURL=styles.css.map */
