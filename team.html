@@ -11,10 +11,94 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js"></script>
     <title>UST</title>
 </head>
 <body class="body-team-page">
     <div class="wrapper">
+        <div class="mobile-menu">
+            <div class="mobile-menu-row">
+                <div class="mobile-controls">
+                    <div class="controls-icon">
+                        <img src="./img/RU.svg" width="28" height="20" id="lang">
+                        <img src="./img/header-sm-line.svg" width="2" height="24">
+                        <img src="./img/header-search.svg" width="28" height="28">
+                    </div>
+                    <button class="mobile-button" id="close-menu-btn">
+                        <img src="./img/close-menu-btn.svg" width="18" height="18">
+                    </button>
+                </div>
+                <ul class="mobile-nav">
+                    <li><a href="./index.html" class="mobile-nav__item">Главная</a></li>
+                    <li><a href="./team.html" class="mobile-nav__item">Команда</a></li>
+                    <li><a href="#" class="mobile-nav__item">Услуги</a></li>
+                    <li><a href="#" class="mobile-nav__item">Карьера</a></li>
+                    <li><a href="#" class="mobile-nav__item">Портфолио</a></li>
+                    <li><a href="#" class="mobile-nav__item">Контакты</a></li>
+                </ul>
+                <div class="menu-social-one">
+                    <div class="menu-social__img">
+                        <a href="#">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_92_4423)">
+                                    <path
+                                        d="M29.6313 0H2.3625C1.05625 0 0 1.03125 0 2.30625V29.6875C0 30.9625 1.05625 32 2.3625 32H29.6313C30.9375 32 32 30.9625 32 29.6938V2.30625C32 1.03125 30.9375 0 29.6313 0ZM9.49375 27.2687H4.74375V11.9937H9.49375V27.2687ZM7.11875 9.9125C5.59375 9.9125 4.3625 8.68125 4.3625 7.1625C4.3625 5.64375 5.59375 4.4125 7.11875 4.4125C8.6375 4.4125 9.86875 5.64375 9.86875 7.1625C9.86875 8.675 8.6375 9.9125 7.11875 9.9125ZM27.2687 27.2687H22.525V19.8438C22.525 18.075 22.4937 15.7937 20.0562 15.7937C17.5875 15.7937 17.2125 17.725 17.2125 19.7188V27.2687H12.475V11.9937H17.025V14.0813H17.0875C17.7188 12.8813 19.2688 11.6125 21.575 11.6125C26.3813 11.6125 27.2687 14.775 27.2687 18.8875V27.2687Z"
+                                        fill="#1E74EC" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_92_4423">
+                                        <rect width="32" height="32" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="menu-social__img">
+                        <a href="#">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_92_4424)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M22.4578 8.73058C20.8058 7.15498 18.6011 6.29663 16.3201 6.3319C12.1459 6.3319 8.60081 9.14797 7.33679 12.94C6.66657 14.9271 6.66657 17.0789 7.33678 19.0661H7.34265C8.61254 22.8522 12.1518 25.6683 16.3259 25.6683C18.4806 25.6683 20.3305 25.1172 21.7641 24.1437V24.1398C23.4514 23.0228 24.6038 21.2649 24.9624 19.2778H16.3201V13.1165H31.4118C31.5999 14.1865 31.6881 15.28 31.6881 16.3676C31.6881 21.2341 29.9489 25.3484 26.9228 28.1351L26.926 28.1375C24.2745 30.5833 20.6353 32.0001 16.3201 32.0001C10.2704 32.0001 4.7382 28.5902 2.02205 23.1873C-0.247266 18.6663 -0.24726 13.3398 2.02207 8.81881C4.73822 3.41003 10.2704 0.000101659 16.3201 0.000101659C20.2943 -0.0469312 24.1334 1.44636 27.0259 4.16251L22.4578 8.73058Z"
+                                        fill="#1E74EC" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_92_4424">
+                                        <rect width="32" height="32" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="menu-social-two">
+                    <div class="menu-social__img">
+                        <a href="#">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_92_4426)">
+                                    <path
+                                        d="M32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 23.9859 5.85094 30.6053 13.5 31.8056V20.625H9.4375V16H13.5V12.475C13.5 8.465 15.8888 6.25 19.5434 6.25C21.2934 6.25 23.125 6.5625 23.125 6.5625V10.5H21.1075C19.12 10.5 18.5 11.7334 18.5 13V16H22.9375L22.2281 20.625H18.5V31.8056C26.1491 30.6053 32 23.9859 32 16Z"
+                                        fill="#1E74EC" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_92_4426">
+                                        <rect width="32" height="32" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="menu-social__img">
+                        <a href="#">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16 0C7.16703 0 0 7.16703 0 16C0 24.833 7.16703 32 16 32C24.8156 32 32 24.833 32 16C32 7.16703 24.8156 0 16 0ZM26.5683 7.37527C28.4772 9.70065 29.6226 12.6681 29.6573 15.8785C29.2061 15.7918 24.6941 14.872 20.1475 15.4447C20.0434 15.2191 19.9566 14.9761 19.8525 14.7332C19.5748 14.0738 19.2625 13.397 18.9501 12.7549C23.9826 10.7072 26.2733 7.75705 26.5683 7.37527ZM16 2.36009C19.4707 2.36009 22.6464 3.66161 25.0586 5.7961C24.8156 6.14317 22.7505 8.90239 17.8915 10.7245C15.6529 6.61171 13.1714 3.24512 12.7896 2.72451C13.8134 2.48156 14.8894 2.36009 16 2.36009ZM10.1866 3.64425C10.551 4.13015 12.9805 7.5141 15.2538 11.5401C8.86768 13.2408 3.22777 13.2061 2.62039 13.2061C3.50542 8.9718 6.36876 5.44902 10.1866 3.64425ZM2.32538 16.0174C2.32538 15.8785 2.32538 15.7397 2.32538 15.6009C2.9154 15.6182 9.54447 15.705 16.3644 13.6573C16.7636 14.4208 17.128 15.2017 17.4751 15.9826C17.3015 16.0347 17.1106 16.0868 16.9371 16.1388C9.89154 18.4121 6.14317 24.6247 5.8308 25.1453C3.6616 22.7332 2.32538 19.5228 2.32538 16.0174ZM16 29.6746C12.8416 29.6746 9.92625 28.5987 7.61822 26.7939C7.86117 26.2907 10.6377 20.9458 18.3427 18.256C18.3774 18.2386 18.3948 18.2386 18.4295 18.2213C20.3557 23.2017 21.1367 27.3839 21.3449 28.5813C19.6963 29.2928 17.8915 29.6746 16 29.6746ZM23.6182 27.3319C23.4794 26.4989 22.7505 22.5076 20.9631 17.5965C25.2495 16.9197 28.9978 18.0304 29.4664 18.1866C28.8764 21.987 26.6898 25.2668 23.6182 27.3319Z"
+                                    fill="#1E74EC" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="header-wrapper">
             <div class="container">
                 <div class="header-block">
@@ -48,6 +132,9 @@
                                 <img src="./img/header-search.svg" width="28" height="28">
                             </div>
                         </nav>
+                        <button class="mobile-button" id="open-menu-btn">
+                            <img src="./img/open-menu-btn.svg" width="24" height="24">
+                        </button>
                     </header>
                     <div class="hero__block">
                         <div class="section-title">Будем знакомы</div>
@@ -155,6 +242,11 @@
                             </div>
                         </div>
                     </div>
+                    <div class="teams-buttons">
+                        <button class="teams-btn" role="button" aria-label="all teams">
+                        <a href="#" class="teams-btn-all">Вся команда</a>
+                    </button>
+                    </div>
                 </div>
             </section>
             <section class="open-position">
@@ -197,10 +289,10 @@
                     <div class="footer-block__nav">
                         <ul class="footer-nav">
                             <li>
-                                <a href="#" class="footer-nav__item">Главная</a>
+                                <a href="./index.html" class="footer-nav__item">Главная</a>
                             </li>
                             <li>
-                                <a href="#" class="footer-nav__item">Команда</a>
+                                <a href="./team.html" class="footer-nav__item">Команда</a>
                             </li>
                             <li>
                                 <a href="#" class="footer-nav__item">Услуги</a>

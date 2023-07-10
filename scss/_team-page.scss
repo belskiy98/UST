@@ -37,6 +37,17 @@
         padding-top: 0;
     }
 
+    @media (max-width:576px) {
+        .body-team-page .hero__block {
+            padding-top: 80px;
+            padding-bottom: 84px;
+        }
+
+        .body-team-page .section-title {
+            padding-bottom: 4px;
+        }
+    }
+
     .teams {
         padding-top: 180px;
         padding-bottom: 180px;
@@ -132,6 +143,77 @@
         }
     }
 
+    .teams-buttons {
+        display: none;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .teams-btn {
+        border: 2px solid var(--blue-light);
+        padding: 8px 16px;
+        background-color: transparent;
+        @extend %transition;
+
+        &:hover {
+            cursor: pointer;
+
+        }
+
+        &:active {
+            transform: scale(95%);
+        }
+    }
+
+    .teams-btn-all {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.28px;
+        color: var(--blue-light);
+        text-decoration: none;
+        text-align: center;
+    }
+
+    @media (max-width:1475px) {
+        .teams__gallary {
+            flex: 0 0 auto;
+            width: 100%;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .teams-row__third .teams__gallary {
+            justify-content: center;
+        }
+    }
+
+    @media (max-width:576px) {
+        .teams {
+            padding-top: 80px;
+            padding-bottom: 88px;
+        }
+
+        .teams-row__second {
+            display: none;
+        }
+
+        .teams-row__third {
+            padding-top: 40px;
+        }
+
+        .teams-card {
+            gap: 8px;
+        }
+
+        .teams-buttons {
+            display: flex;
+        }
+        
+    }
+
     .open-position {
         background-image: url(../img/team-position-bg.jpg);
         background-size: cover;
@@ -155,5 +237,28 @@
         &__btn {
             @include btnBlue();
             padding: 14px 40px 14px 40px;
+        }
+    }
+
+    @media (max-width:576px) {
+        .open-position {
+            padding-top: 80px;
+            padding-bottom: 64px;
+            background-image: url(../img/team-position-bg-mobile.jpg);
+        }
+
+        .position-col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .position-col__title {
+            text-align: center;
+        }
+
+        .position-col__btn {
+            border-radius: 8px;
+            padding: 14px 119px 14px 119px;
         }
     }
