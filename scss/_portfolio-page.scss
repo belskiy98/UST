@@ -1,0 +1,33 @@
+.body-portfolio-page .header-wrapper {
+    background-color: black;
+        background-image: url(../img/portfolio-bg-header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+}
+
+.body-portfolio-page header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+    background: none;
+}
+
+.body-portfolio-page .hero__block {
+    padding-top: 110px;
+    padding-bottom: 166px;
+}
+
+.body-portfolio-page h1 {
+    padding-top: 0;
+    padding-bottom: 16px;
+}
+
+.body-portfolio-page .hero__text {
+    padding-top: 0;
+    padding-bottom: 64px;
+    font-size: var(--base-font-size);
+}

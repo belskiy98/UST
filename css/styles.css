@@ -458,7 +458,7 @@ h1 {
   .hero-btn {
     display: block;
     margin: 0 auto;
-    padding: 14px 75px 14px 75px;
+    padding: 14px 114px 14px 114px;
     border-radius: 8px;
   }
   .hero__experience {
@@ -1565,6 +1565,7 @@ h1 {
 .body-team-page .hero__text {
   padding-bottom: 0;
   padding-top: 0;
+  font-size: var(--base-font-size);
 }
 
 @media (max-width: 576px) {
@@ -1764,6 +1765,39 @@ h1 {
     border-radius: 8px;
     padding: 14px 119px 14px 119px;
   }
+}
+.body-portfolio-page .header-wrapper {
+  background-color: black;
+  background-image: url(../img/portfolio-bg-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.body-portfolio-page header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+  background: none;
+}
+
+.body-portfolio-page .hero__block {
+  padding-top: 110px;
+  padding-bottom: 166px;
+}
+
+.body-portfolio-page h1 {
+  padding-top: 0;
+  padding-bottom: 16px;
+}
+
+.body-portfolio-page .hero__text {
+  padding-top: 0;
+  padding-bottom: 64px;
+  font-size: var(--base-font-size);
 }
 
 /*# sourceMappingURL=styles.css.map */
