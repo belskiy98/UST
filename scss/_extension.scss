@@ -48,6 +48,13 @@
     line-height: 20px;
 }
 
+%TXT-L {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 325;
+    line-height: 28px;
+}
+
 @media (max-width:576px) {
     %H1L {
         font-size: 56px;
@@ -82,5 +89,11 @@
     %TXT-XS {
         font-size: 11px;
         line-height: 14px;
+    }
+
+    %TXT-L {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
     }
 }

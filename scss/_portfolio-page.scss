@@ -31,3 +31,52 @@
     padding-bottom: 64px;
     font-size: var(--base-font-size);
 }
+
+.portfolio-gallary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-bottom: 80px;
+}
+
+.portfolio-portfolio {
+    padding-top: 180px;
+    padding-bottom: 100px;
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+
+    &__img {
+        overflow: hidden;
+    }
+
+    &__img img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: auto 700 / 800;
+        @extend %transition;
+    }
+
+    &__img img:hover {
+        transform: scale(105%);
+    }
+
+    &__link a {
+        text-decoration: none;
+        color: var(--blue-90);
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 500;
+    }
+
+    &__text {
+        @extend %TXT-L;
+    }
+}

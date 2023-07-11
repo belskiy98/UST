@@ -24,7 +24,7 @@ body {
   --font-family-secondary: "Inter", sans-serif;
 }
 
-.position-col__btn, .teams-btn, .teams-card, .confidentiality__link a,
+.portfolio-item__img img, .position-col__btn, .teams-btn, .teams-card, .confidentiality__link a,
 .cookies__policy a, .footer-additionally__link, .footer-social__img svg, .footer-nav__item, .accordion-tab__short::after, .accordion-tab__short, .submit-btn__blue, .submit-block__link a, .input-aria textarea::placeholder, .input-aria textarea, .labeled-input-container input::placeholder, .labeled-input-container input, .contact-info__img svg, .portfolio-btns__blue, .portfolio-btns__contour, .portfolio-card__img img, .btn-all, .about-btn__blue, .about-btn__contour, .hero-btn, .nav-item::after, .nav-item {
   transition: all 300ms ease;
 }
@@ -75,6 +75,13 @@ body {
   line-height: 20px;
 }
 
+.portfolio-item__text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 325;
+  line-height: 28px;
+}
+
 @media (max-width: 576px) {
   .experience-items__years {
     font-size: 56px;
@@ -104,6 +111,11 @@ body {
   .submit-block__text, .text-required {
     font-size: 11px;
     line-height: 14px;
+  }
+  .portfolio-item__text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
   }
 }
 html, body {
@@ -273,7 +285,7 @@ nav {
   cursor: pointer;
 }
 
-.position-col__btn, .teams-btn, .teams-card, .confidentiality__link a,
+.portfolio-item__img img, .position-col__btn, .teams-btn, .teams-card, .confidentiality__link a,
 .cookies__policy a, .footer-additionally__link, .footer-social__img svg, .footer-nav__item, .accordion-tab__short::after, .accordion-tab__short, .submit-btn__blue, .submit-block__link a, .input-aria textarea::placeholder, .input-aria textarea, .labeled-input-container input::placeholder, .labeled-input-container input, .contact-info__img svg, .portfolio-btns__blue, .portfolio-btns__contour, .portfolio-card__img img, .btn-all, .about-btn__blue, .about-btn__contour, .hero-btn, .nav-item::after, .nav-item {
   transition: all 300ms ease;
 }
@@ -1798,6 +1810,46 @@ h1 {
   padding-top: 0;
   padding-bottom: 64px;
   font-size: var(--base-font-size);
+}
+
+.portfolio-gallary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-bottom: 80px;
+}
+
+.portfolio-portfolio {
+  padding-top: 180px;
+  padding-bottom: 100px;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.portfolio-item__img {
+  overflow: hidden;
+}
+.portfolio-item__img img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto 700/800;
+}
+.portfolio-item__img img:hover {
+  transform: scale(105%);
+}
+.portfolio-item__link a {
+  text-decoration: none;
+  color: var(--blue-90);
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=styles.css.map */
