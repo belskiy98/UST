@@ -80,3 +80,20 @@
         @extend %TXT-L;
     }
 }
+
+.have-idea {
+    background-image: url(../img/portfolio-bg-have-idea.jpg);
+    background-size: cover;
+    padding-top: 243px;
+    padding-bottom: 244px;
+}
+
+.body-portfolio-page .position-col__title {
+    padding-bottom: 24px;
+}
+
+.body-portfolio-page .position-col__text {
+    @extend %TXT-L;
+    color: var(--gray-20);
+    padding-bottom: 24px;
+}

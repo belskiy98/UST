@@ -75,7 +75,7 @@ body {
   line-height: 20px;
 }
 
-.portfolio-item__text {
+.body-portfolio-page .position-col__text, .portfolio-item__text {
   font-size: 20px;
   font-style: normal;
   font-weight: 325;
@@ -112,7 +112,7 @@ body {
     font-size: 11px;
     line-height: 14px;
   }
-  .portfolio-item__text {
+  .body-portfolio-page .position-col__text, .portfolio-item__text {
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
@@ -1850,6 +1850,21 @@ h1 {
   font-size: 22px;
   line-height: 32px;
   font-weight: 500;
+}
+.have-idea {
+  background-image: url(../img/portfolio-bg-have-idea.jpg);
+  background-size: cover;
+  padding-top: 243px;
+  padding-bottom: 244px;
+}
+
+.body-portfolio-page .position-col__title {
+  padding-bottom: 24px;
+}
+
+.body-portfolio-page .position-col__text {
+  color: var(--gray-20);
+  padding-bottom: 24px;
 }
 
 /*# sourceMappingURL=styles.css.map */
