@@ -569,6 +569,10 @@ h1 {
 }
 .about-btn__contour:hover {
   cursor: pointer;
+  background-color: var(--blue-light);
+}
+.about-btn__contour:hover .btn-contour {
+  color: var(--gray-10);
 }
 .about-btn__contour:active {
   transform: scale(95%);
@@ -829,6 +833,10 @@ h1 {
 }
 .portfolio-btns__contour:hover {
   cursor: pointer;
+  background-color: var(--blue-light);
+}
+.portfolio-btns__contour:hover .btn-contour {
+  color: var(--gray-10);
 }
 .portfolio-btns__contour:active {
   transform: scale(95%);

@@ -476,6 +476,11 @@ h1 {
 
     &:hover {
         cursor: pointer;
+        background-color: var(--blue-light);
+    }
+
+    &:hover .btn-contour {
+        color: var(--gray-10);
     }
 
     &:active {
