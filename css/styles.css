@@ -139,6 +139,10 @@ html, body {
   color: var(--text-color);
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 @media (max-width: 576px) {
   body {
     --base-font-size: 12px;

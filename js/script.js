@@ -28,4 +28,18 @@ window.addEventListener("DOMContentLoaded", function(){
 			document.querySelector(".mobile-menu").classList.remove("visible");
 		}
 	});
+
+    //turn off page scroll when menu menu is open
+
+    btnMenu.addEventListener("click", function() {
+
+        let bodyLock = document.querySelector("body");
+        bodyLock.classList.add("lock");
+    });
+
+    document.body.addEventListener("click", function(e){
+		if(!e.target.closest("#open-menu-btn")){
+			document.querySelector("body").classList.remove("lock");
+		}
+	});
 });
