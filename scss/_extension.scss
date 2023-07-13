@@ -30,6 +30,12 @@
     line-height: 22px;
 }
 
+%H5 {
+    font-size: 22px;
+    font-weight: 350;
+    line-height: 32px;
+}
+
 %H6 {
     font-size: 16px;
     font-weight: 700;
@@ -77,6 +83,11 @@
         font-size: 12px;
         font-weight: 400;
         line-height: 16px;
+    }
+
+    %H5 {
+        font-size: 18px;
+        line-height: 22px;
     }
 
     %H6 {

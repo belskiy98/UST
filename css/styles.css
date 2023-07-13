@@ -57,6 +57,12 @@ body {
   line-height: 22px;
 }
 
+.portfolio-item__link a {
+  font-size: 22px;
+  font-weight: 350;
+  line-height: 32px;
+}
+
 .teams-card__name, .slovenia-info__title, .russia-info__title, .russia-block__title, .slovenia-block__title {
   font-size: 16px;
   font-weight: 700;
@@ -101,6 +107,10 @@ body {
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
+  }
+  .portfolio-item__link a {
+    font-size: 18px;
+    line-height: 22px;
   }
   .teams-card__name, .slovenia-info__title, .russia-info__title, .russia-block__title, .slovenia-block__title {
     font-size: 12px;
@@ -1772,6 +1782,7 @@ h1 {
   }
   .position-col__title {
     text-align: center;
+    padding-bottom: 40px;
   }
   .position-col__btn {
     border-radius: 8px;
@@ -1847,9 +1858,25 @@ h1 {
 .portfolio-item__link a {
   text-decoration: none;
   color: var(--blue-90);
-  font-size: 22px;
-  line-height: 32px;
   font-weight: 500;
+}
+@media (max-width: 1499px) {
+  .portfolio-gallary {
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .portfolio-portfolio {
+    padding-top: 80px;
+    padding-bottom: 16px;
+  }
+  .portfolio-gallary {
+    padding-bottom: 64px;
+    gap: 64px;
+  }
+  .portfolio-item {
+    align-items: center;
+  }
 }
 .have-idea {
   background-image: url(../img/portfolio-bg-have-idea.jpg);
@@ -1865,6 +1892,29 @@ h1 {
 .body-portfolio-page .position-col__text {
   color: var(--gray-20);
   padding-bottom: 24px;
+}
+
+@media (max-width: 576px) {
+  .have-idea {
+    padding-top: 80px;
+    padding-bottom: 64px;
+    background-position: center;
+  }
+  .body-portfolio-page .position-col__name {
+    align-self: flex-start;
+  }
+  .body-portfolio-page .position-col__title {
+    align-self: flex-start;
+  }
+  .body-portfolio-page .position-col__text {
+    align-self: flex-start;
+  }
+  .body-portfolio-page .position-col__title {
+    padding-bottom: 16px;
+  }
+  .body-portfolio-page .position-col__text {
+    padding-bottom: 40px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
