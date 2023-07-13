@@ -43,6 +43,11 @@ html, body {
     display: block;
 }
 
+@keyframes show {
+    from { opacity: 0.8; right: -350px; }
+    to { opacity: 1; right: 0; }
+  }
+
 .mobile-menu-row {
     min-height: 570px;
     display: flex;
@@ -55,6 +60,8 @@ html, body {
     background-color: var(--white);
     padding: 37px 33px 90px 30px;
     border: 1px solid #DDDDE2;
+    transition: all 300ms ease;
+    animation: 500ms show ease;
 }
 
 .mobile-controls {
