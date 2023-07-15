@@ -15,7 +15,7 @@ window.addEventListener("DOMContentLoaded", function(){
     }
 
     //mobile menu
-
+    
     let btnMenu = document.querySelector("#open-menu-btn");
     btnMenu.addEventListener("click", function() {
 
@@ -42,4 +42,18 @@ window.addEventListener("DOMContentLoaded", function(){
 			document.querySelector("body").classList.remove("lock");
 		}
 	});
+
+    //display the entire team
+
+    let btnTeams = this.document.querySelector(".teams-btn");
+    btnTeams.addEventListener("click", function() {
+
+        let teamCard = document.querySelector(".teams-row__second");
+        teamCard.classList.add("active");
+
+        let teamsButtonsBLock = document.querySelector(".teams-buttons");
+        teamsButtonsBLock.classList.add("hidden");
+    });
+
+
 });

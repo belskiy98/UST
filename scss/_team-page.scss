@@ -135,6 +135,10 @@
         padding-top: 78px;
     }
 
+    .teams-row__second.active {
+        display: block;
+    }
+
     .teams-row__third {
         padding-top: 78px;
 
@@ -150,6 +154,10 @@
         justify-content: center;
         align-items: center;
         padding-top: 50px;
+    }
+
+    .teams-buttons.hidden {
+        display: none;
     }
 
     .teams-btn {
@@ -199,6 +207,7 @@
 
         .teams-row__second {
             display: none;
+            padding-top: 40px;
         }
 
         .teams-row__third {
