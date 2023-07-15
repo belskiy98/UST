@@ -21,6 +21,7 @@ body {
   --base-line-heignt: 22px;
   --font-size-secondary: 20px;
   --line-height-secondary:28px;
+  --font-family-base: "Montserrat", sans-serif;
   --font-family-secondary: "Inter", sans-serif;
 }
 
@@ -1948,6 +1949,38 @@ h1 {
   .body-portfolio-page .position-col__text {
     padding-bottom: 40px;
   }
+}
+.body-contacts-page .header-wrapper {
+  background-color: black;
+  background-image: url(../img/contact-hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.body-contacts-page header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+  background: none;
+}
+
+.body-contacts-page .hero__block {
+  padding-top: 110px;
+  padding-bottom: 272px;
+}
+
+.body-contacts-page .section-title {
+  color: var(--blue-20);
+  padding-bottom: 10px;
+}
+
+.body-contacts-page h1 {
+  padding-top: 0;
+  font-family: var(--font-family-base);
 }
 
 /*# sourceMappingURL=styles.css.map */

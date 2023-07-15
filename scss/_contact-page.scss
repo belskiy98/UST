@@ -1,0 +1,32 @@
+.body-contacts-page .header-wrapper {
+    background-color: black;
+    background-image: url(../img/contact-hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.body-contacts-page header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+    background: none;
+}
+
+.body-contacts-page .hero__block {
+    padding-top: 110px;
+    padding-bottom: 272px;
+}
+
+.body-contacts-page .section-title {
+    color: var(--blue-20);
+    padding-bottom: 10px;
+}
+
+.body-contacts-page h1 {
+    padding-top: 0;
+    font-family: var(--font-family-base);
+}
