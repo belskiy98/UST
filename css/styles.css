@@ -1857,6 +1857,12 @@ h1 {
   font-size: var(--base-font-size);
 }
 
+@media (max-width: 576px) {
+  .body-portfolio-page .hero__block {
+    padding-top: 80px;
+    padding-bottom: 64px;
+  }
+}
 .portfolio-gallary {
   display: flex;
   flex-direction: row;
@@ -1983,6 +1989,15 @@ h1 {
   font-family: var(--font-family-base);
 }
 
+@media (max-width: 576px) {
+  .body-contacts-page .header-wrapper {
+    background-image: url(../img/contact-hero-bg-mob.jpg);
+  }
+  .body-contacts-page .hero__block {
+    padding-top: 80px;
+    padding-bottom: 82px;
+  }
+}
 .body-contacts-page .contact-row {
   align-items: flex-start;
   bottom: 180px;
@@ -1990,6 +2005,46 @@ h1 {
 
 .body-contacts-page .contact-info__text {
   padding-top: 0;
+}
+
+@media (max-width: 1402px) {
+  .body-contacts-page .contact-row {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .body-contacts-page .contact-row {
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 64px;
+    padding-left: 0;
+  }
+}
+@media (max-width: 576px) {
+  .body-contacts-page .contact > .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .body-contacts-page .contact-info {
+    max-width: 100%;
+  }
+  .body-contacts-page .contact-info {
+    padding: 40px 16px 40px 16px;
+  }
+  .body-contacts-page .contact-info__social {
+    justify-content: space-around;
+  }
+  .body-contacts-page .form-block__text {
+    display: block;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 0;
+  }
+  .body-contacts-page .text-required {
+    display: flex;
+    align-self: flex-start;
+    padding-left: 16px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
