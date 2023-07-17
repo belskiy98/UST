@@ -215,6 +215,10 @@ nav {
     width: 100%;
 }
 
+.body-main-page .header-nav > li:first-child {
+    font-weight: 700;
+}
+
 .header-controls {
     display: flex;
     flex-direction: row;
