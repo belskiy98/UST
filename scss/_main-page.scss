@@ -403,11 +403,19 @@ h1 {
         border-radius: 8px;
     }
 
+    .header-block > .hero__experience {
+        display: none;
+    }
+
     .hero__experience {
         padding-top: 53px;
         padding-bottom: 106px;
         background-color: var(--blue-100);
     }
+}
+
+.body-main-page .experience {
+    display: none;
 }
 
 .about {
@@ -537,6 +545,15 @@ h1 {
 }
 
 @media (max-width:576px) {
+    .body-main-page .experience {
+        display: block;
+    }
+
+    .body-main-page .experience > .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .about {
         padding-bottom: 88px;
     }
