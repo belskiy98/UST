@@ -30,3 +30,12 @@
     padding-top: 0;
     font-family: var(--font-family-base);
 }
+
+.body-contacts-page .contact-row {
+    align-items: flex-start;
+    bottom: 180px;
+}
+
+.body-contacts-page .contact-info__text {
+    padding-top: 0;
+}
