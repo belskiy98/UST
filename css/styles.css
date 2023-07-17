@@ -1845,6 +1845,51 @@ h1 {
     padding: 14px 119px 14px 119px;
   }
 }
+.body-career-page .header-wrapper {
+  background-color: black;
+  background-image: url(../img/career-bg-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.body-career-page header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+  background: none;
+}
+
+.body-career-page .header-nav > li:nth-child(7) {
+  font-weight: 700;
+}
+
+.body-career-page .hero__block {
+  padding-top: 110px;
+  padding-bottom: 158px;
+}
+
+.body-career-page h1 {
+  padding-top: 0;
+  font-family: var(--font-family-base);
+  padding-bottom: 16px;
+}
+
+.body-career-page .hero__text {
+  padding-top: 0;
+  padding-bottom: 64px;
+  font-size: var(--base-font-size);
+}
+
+@media (max-width: 576px) {
+  .body-career-page .hero__block {
+    padding-top: 80px;
+    padding-bottom: 64px;
+  }
+}
 .body-portfolio-page .header-wrapper {
   background-color: black;
   background-image: url(../img/portfolio-bg-header.jpg);
