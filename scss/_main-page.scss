@@ -332,6 +332,8 @@ h1 {
     color: var(--gray-10);
 
     &__years {
+        display: flex;
+        gap: 5px;
         @extend %H1L;
         color: var(--gray-10);
         align-self: center

@@ -450,6 +450,8 @@ h1 {
   color: var(--gray-10);
 }
 .experience-items__years {
+  display: flex;
+  gap: 5px;
   color: var(--gray-10);
   align-self: center;
 }

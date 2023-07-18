@@ -1,5 +1,25 @@
 window.addEventListener("DOMContentLoaded", function(){
 
+    //increase in the number
+
+    function calcCount() {
+        for (let i = 0; i < $('.experience__num').length; i++) {
+            let end = $('.experience__num').eq(i).text();
+            countStart(end, i);
+        }
+    }
+    
+    function countStart(end, i) {
+        let start = 0;
+        let intervalOne = setInterval(function () {
+            $('.experience__num').eq(i).text(++start);
+            if (start == end) {
+                clearInterval(intervalOne);
+            }
+        }, 65);
+    }
+    calcCount();
+
     //accordion
 
     const tabs = document.querySelectorAll(".accordion-tab__short");
