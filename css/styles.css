@@ -25,7 +25,7 @@ body {
   --font-family-secondary: "Inter", sans-serif;
 }
 
-.portfolio-item__img img, .position-col__btn, .teams-btn, .teams-card, .confidentiality__link a,
+.portfolio-item__img img, .social-item img, .body-career-page .accordion-tab__short::after, .position-col__btn, .teams-btn, .teams-card, .confidentiality__link a,
 .cookies__policy a, .footer-additionally__link, .footer-social__img svg, .footer-nav__item, .accordion-tab__short::after, .accordion-tab__short, .submit-btn__blue, .submit-block__link a, .input-aria textarea::placeholder, .input-aria textarea, .labeled-input-container input::placeholder, .labeled-input-container input, .contact-info__img svg, .portfolio-btns__blue, .portfolio-btns__contour, .portfolio-card__img img, .btn-all, .about-btn__blue, .about-btn__contour, .hero-btn, .nav-item::after, .nav-item {
   transition: all 300ms ease;
 }
@@ -38,7 +38,7 @@ body {
   text-transform: uppercase;
 }
 
-.position-col__title, .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
+.vacancies-row__title, .position-col__title, .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
   font-size: 54px;
   font-weight: 700;
   line-height: 60px;
@@ -64,7 +64,7 @@ body {
   line-height: 32px;
 }
 
-.teams-card__name, .slovenia-info__title, .russia-info__title, .russia-block__title, .slovenia-block__title {
+.full-row__title, .teams-card__name, .slovenia-info__title, .russia-info__title, .russia-block__title, .slovenia-block__title {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -82,7 +82,7 @@ body {
   line-height: 20px;
 }
 
-.body-portfolio-page .position-col__text, .portfolio-item__text {
+.body-portfolio-page .position-col__text, .portfolio-item__text, .vacancies-row__text {
   font-size: 20px;
   font-style: normal;
   font-weight: 325;
@@ -95,7 +95,7 @@ body {
     font-weight: 700;
     line-height: normal;
   }
-  .position-col__title, .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
+  .vacancies-row__title, .position-col__title, .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
     font-size: 30px;
     line-height: 32px;
   }
@@ -113,7 +113,7 @@ body {
     font-size: 18px;
     line-height: 22px;
   }
-  .teams-card__name, .slovenia-info__title, .russia-info__title, .russia-block__title, .slovenia-block__title {
+  .full-row__title, .teams-card__name, .slovenia-info__title, .russia-info__title, .russia-block__title, .slovenia-block__title {
     font-size: 12px;
     font-weight: 500;
     line-height: 14px;
@@ -123,7 +123,7 @@ body {
     font-size: 11px;
     line-height: 14px;
   }
-  .body-portfolio-page .position-col__text, .portfolio-item__text {
+  .body-portfolio-page .position-col__text, .portfolio-item__text, .vacancies-row__text {
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
@@ -312,7 +312,7 @@ nav {
   cursor: pointer;
 }
 
-.portfolio-item__img img, .position-col__btn, .teams-btn, .teams-card, .confidentiality__link a,
+.portfolio-item__img img, .social-item img, .body-career-page .accordion-tab__short::after, .position-col__btn, .teams-btn, .teams-card, .confidentiality__link a,
 .cookies__policy a, .footer-additionally__link, .footer-social__img svg, .footer-nav__item, .accordion-tab__short::after, .accordion-tab__short, .submit-btn__blue, .submit-block__link a, .input-aria textarea::placeholder, .input-aria textarea, .labeled-input-container input::placeholder, .labeled-input-container input, .contact-info__img svg, .portfolio-btns__blue, .portfolio-btns__contour, .portfolio-card__img img, .btn-all, .about-btn__blue, .about-btn__contour, .hero-btn, .nav-item::after, .nav-item {
   transition: all 300ms ease;
 }
@@ -542,7 +542,7 @@ h1 {
   aspect-ratio: auto 947/640;
 }
 
-.position-col__title, .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
+.vacancies-row__title, .position-col__title, .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
   font-size: 54px;
   font-weight: 700;
   line-height: 60px;
@@ -550,7 +550,7 @@ h1 {
 }
 
 @media (max-width: 576px) {
-  .position-col__title, .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
+  .vacancies-row__title, .position-col__title, .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
     font-size: 30px;
     line-height: 32px;
   }
@@ -1076,7 +1076,7 @@ h1 {
   line-height: 22px;
 }
 
-.teams-card__name, .slovenia-info__title, .russia-info__title, .russia-block__title, .slovenia-block__title {
+.full-row__title, .teams-card__name, .slovenia-info__title, .russia-info__title, .russia-block__title, .slovenia-block__title {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -1100,7 +1100,7 @@ h1 {
     font-weight: 400;
     line-height: 16px;
   }
-  .teams-card__name, .slovenia-info__title, .russia-info__title, .russia-block__title, .slovenia-block__title {
+  .full-row__title, .teams-card__name, .slovenia-info__title, .russia-info__title, .russia-block__title, .slovenia-block__title {
     font-size: 12px;
     font-weight: 500;
     line-height: 14px;
@@ -1890,6 +1890,101 @@ h1 {
     padding-bottom: 64px;
   }
 }
+.career-vacancies {
+  padding-top: 180px;
+  padding-bottom: 175px;
+}
+
+.vacancies-row {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 36px;
+}
+.vacancies-row__text {
+  color: var(--gray-80);
+  max-width: 821px;
+}
+
+.body-career-page .accordion-tab {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.body-career-page .accordion-tab__short {
+  gap: 10px;
+}
+
+.body-career-page .accordion-tab__short::after {
+  content: url(../img/accord-open-chevron.svg);
+  transform: rotate(-90deg);
+}
+
+.body-career-page .accordion-tab--open .accordion-tab__short::after {
+  transform: rotate(0deg);
+}
+
+.full-content {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.full-row__title {
+  color: var(--blue-90);
+}
+.full-row__skills {
+  padding-top: 10px;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.full-row__text {
+  padding-top: 10px;
+}
+.full-row__social {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  gap: 24px;
+  padding-left: 3px;
+}
+
+.skills-item {
+  padding: 12px 14px 12px 14px;
+  background-color: var(--bg-secondary-color);
+  border-radius: 4px;
+}
+
+.text-list {
+  padding-bottom: 10px;
+  color: var(--gray-80);
+}
+
+.text-list:last-child {
+  padding-bottom: 0;
+}
+
+.text-list::before {
+  content: url(../img/ellipse-blue.svg);
+  position: relative;
+  bottom: 4px;
+  padding-right: 15px;
+}
+
+.social-item img {
+  aspect-ratio: auto 32/32;
+  width: 100%;
+  height: auto;
+}
+
+.social-item img:hover {
+  transform: scale(115%);
+}
+
 .body-portfolio-page .header-wrapper {
   background-color: black;
   background-image: url(../img/portfolio-bg-header.jpg);
