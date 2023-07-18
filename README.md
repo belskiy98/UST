@@ -3,7 +3,7 @@
 
 Business website for IT company.
 
-Technologies used by a website: HTML/CSS/SASS/JS.
+Technologies used by a website: HTML/CSS/SASS/JS/JQUERY.
 
 [Github Pages](https://belskiy98.github.io/UST/)
 
