@@ -13,6 +13,7 @@ body {
   --blue-20: #CDCFDF;
   --pink-100: #79077B;
   --pink-80: #A960AB;
+  --gray-100: #535670;
   --gray-80: #75788D;
   --gray-60: #989AA9;
   --gray-20: #DDDDE2;
@@ -25,7 +26,7 @@ body {
   --font-family-secondary: "Inter", sans-serif;
 }
 
-.portfolio-item__img img, .social-item img, .body-career-page .accordion-tab__short::after, .position-col__btn, .teams-btn, .teams-card, .confidentiality__link a,
+.portfolio-item__img img, .submit-form__link a, .download, .social-item img, .body-career-page .accordion-tab__short::after, .position-col__btn, .teams-btn, .teams-card, .confidentiality__link a,
 .cookies__policy a, .footer-additionally__link, .footer-social__img svg, .footer-nav__item, .accordion-tab__short::after, .accordion-tab__short, .submit-btn__blue, .submit-block__link a, .input-aria textarea::placeholder, .input-aria textarea, .labeled-input-container input::placeholder, .labeled-input-container input, .contact-info__img svg, .portfolio-btns__blue, .portfolio-btns__contour, .portfolio-card__img img, .btn-all, .about-btn__blue, .about-btn__contour, .hero-btn, .nav-item::after, .nav-item {
   transition: all 300ms ease;
 }
@@ -38,27 +39,27 @@ body {
   text-transform: uppercase;
 }
 
-.vacancies-row__title, .position-col__title, .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
+.possibilities-col__title, .vacancies-row__title, .position-col__title, .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
   font-size: 54px;
   font-weight: 700;
   line-height: 60px;
   color: var(--blue-100);
 }
 
-.position-col__name, .accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
+.possibilities-col__name, .position-col__name, .accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
   font-weight: 325;
   font-size: 26px;
   line-height: 32px;
   font-weight: 500;
 }
 
-.teams-card__job, .footer-additionally__dev, .slovenia-info__contact, .russia-info__contact, .form-block__text, .contact-info__desc {
+.form-information__text, .teams-card__job, .footer-additionally__dev, .slovenia-info__contact, .russia-info__contact, .form-block__text, .contact-info__desc {
   font-size: 16px;
   font-weight: 325;
   line-height: 22px;
 }
 
-.portfolio-item__link a {
+.portfolio-item__link a, .form-information__title {
   font-size: 22px;
   font-weight: 350;
   line-height: 32px;
@@ -77,12 +78,12 @@ body {
   line-height: 42px;
 }
 
-.submit-block__text, .text-required {
+.submit-form, .labeled-input__text, .submit-block__text, .text-required {
   font-size: 11px;
   line-height: 20px;
 }
 
-.body-portfolio-page .position-col__text, .portfolio-item__text, .vacancies-row__text {
+.body-portfolio-page .position-col__text, .portfolio-item__text, .possibilities-col__text, .vacancies-row__text {
   font-size: 20px;
   font-style: normal;
   font-weight: 325;
@@ -95,21 +96,21 @@ body {
     font-weight: 700;
     line-height: normal;
   }
-  .vacancies-row__title, .position-col__title, .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
+  .possibilities-col__title, .vacancies-row__title, .position-col__title, .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
     font-size: 30px;
     line-height: 32px;
   }
-  .position-col__name, .accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
+  .possibilities-col__name, .position-col__name, .accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
     font-size: 20px;
     font-weight: 325;
     line-height: 24px;
   }
-  .teams-card__job, .footer-additionally__dev, .slovenia-info__contact, .russia-info__contact, .form-block__text, .contact-info__desc {
+  .form-information__text, .teams-card__job, .footer-additionally__dev, .slovenia-info__contact, .russia-info__contact, .form-block__text, .contact-info__desc {
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
   }
-  .portfolio-item__link a {
+  .portfolio-item__link a, .form-information__title {
     font-size: 18px;
     line-height: 22px;
   }
@@ -119,11 +120,11 @@ body {
     line-height: 14px;
     letter-spacing: 0.24px;
   }
-  .submit-block__text, .text-required {
+  .submit-form, .labeled-input__text, .submit-block__text, .text-required {
     font-size: 11px;
     line-height: 14px;
   }
-  .body-portfolio-page .position-col__text, .portfolio-item__text, .vacancies-row__text {
+  .body-portfolio-page .position-col__text, .portfolio-item__text, .possibilities-col__text, .vacancies-row__text {
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
@@ -312,7 +313,7 @@ nav {
   cursor: pointer;
 }
 
-.portfolio-item__img img, .social-item img, .body-career-page .accordion-tab__short::after, .position-col__btn, .teams-btn, .teams-card, .confidentiality__link a,
+.portfolio-item__img img, .submit-form__link a, .download, .social-item img, .body-career-page .accordion-tab__short::after, .position-col__btn, .teams-btn, .teams-card, .confidentiality__link a,
 .cookies__policy a, .footer-additionally__link, .footer-social__img svg, .footer-nav__item, .accordion-tab__short::after, .accordion-tab__short, .submit-btn__blue, .submit-block__link a, .input-aria textarea::placeholder, .input-aria textarea, .labeled-input-container input::placeholder, .labeled-input-container input, .contact-info__img svg, .portfolio-btns__blue, .portfolio-btns__contour, .portfolio-card__img img, .btn-all, .about-btn__blue, .about-btn__contour, .hero-btn, .nav-item::after, .nav-item {
   transition: all 300ms ease;
 }
@@ -413,7 +414,7 @@ h1 {
   text-transform: uppercase;
 }
 
-.position-col__name, .accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
+.possibilities-col__name, .position-col__name, .accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
   font-weight: 325;
   font-size: 26px;
   line-height: 32px;
@@ -426,7 +427,7 @@ h1 {
     font-weight: 700;
     line-height: normal;
   }
-  .position-col__name, .accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
+  .possibilities-col__name, .position-col__name, .accordion-tab__short, .contact-info__title, .contact-col__name, .section-title, .experience-items__text {
     font-size: 20px;
     font-weight: 325;
     line-height: 24px;
@@ -544,7 +545,7 @@ h1 {
   aspect-ratio: auto 947/640;
 }
 
-.vacancies-row__title, .position-col__title, .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
+.possibilities-col__title, .vacancies-row__title, .position-col__title, .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
   font-size: 54px;
   font-weight: 700;
   line-height: 60px;
@@ -552,7 +553,7 @@ h1 {
 }
 
 @media (max-width: 576px) {
-  .vacancies-row__title, .position-col__title, .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
+  .possibilities-col__title, .vacancies-row__title, .position-col__title, .teams__title, .faq__title, .conttact-col__title, .clients-title, .advantages__title, .portfolio__title, .offers__title, .about__title {
     font-size: 30px;
     line-height: 32px;
   }
@@ -1072,7 +1073,7 @@ h1 {
   color: var(--gray-20);
 }
 
-.teams-card__job, .footer-additionally__dev, .slovenia-info__contact, .russia-info__contact, .form-block__text, .contact-info__desc {
+.form-information__text, .teams-card__job, .footer-additionally__dev, .slovenia-info__contact, .russia-info__contact, .form-block__text, .contact-info__desc {
   font-size: 16px;
   font-weight: 325;
   line-height: 22px;
@@ -1091,13 +1092,13 @@ h1 {
   line-height: 42px;
 }
 
-.submit-block__text, .text-required {
+.submit-form, .labeled-input__text, .submit-block__text, .text-required {
   font-size: 11px;
   line-height: 20px;
 }
 
 @media (max-width: 576px) {
-  .teams-card__job, .footer-additionally__dev, .slovenia-info__contact, .russia-info__contact, .form-block__text, .contact-info__desc {
+  .form-information__text, .teams-card__job, .footer-additionally__dev, .slovenia-info__contact, .russia-info__contact, .form-block__text, .contact-info__desc {
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
@@ -1108,7 +1109,7 @@ h1 {
     line-height: 14px;
     letter-spacing: 0.24px;
   }
-  .submit-block__text, .text-required {
+  .submit-form, .labeled-input__text, .submit-block__text, .text-required {
     font-size: 11px;
     line-height: 14px;
   }
@@ -1985,6 +1986,167 @@ h1 {
 
 .social-item img:hover {
   transform: scale(115%);
+}
+
+.possibilities {
+  background-image: url(../img/career-possib-bg.jpg);
+  background-size: cover;
+  padding-top: 112px;
+  padding-bottom: 504px;
+}
+
+.possibilities-col__name {
+  color: var(--bg-secondary-color);
+  padding-bottom: 10px;
+}
+.possibilities-col__title {
+  color: var(--gray-10);
+  padding-bottom: 24px;
+}
+.possibilities-col__text {
+  color: var(--gray-10);
+  max-width: 996px;
+}
+
+.possibilities__information {
+  border-bottom: 2px solid var(--gray-20);
+}
+
+.possibilities-row {
+  position: relative;
+  bottom: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 992px;
+  margin: 0 auto;
+  background-color: var(--gray-10);
+  padding: 64px 124px;
+}
+
+.possibilities-block-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-bottom: 24px;
+}
+
+.form-information {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.form-information__title {
+  color: var(--gray-100);
+  font-weight: 500;
+}
+.form-information__text {
+  color: var(--gray-80);
+  max-width: 369px;
+}
+
+.possibilities-survey-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.body-career-page .labeled-input-container {
+  padding: 0;
+}
+
+.body-career-page .labeled-input-container input {
+  padding: 14px 296px 14px 16px;
+}
+
+.possibilities__portfolio {
+  border-bottom: 2px solid var(--gray-20);
+}
+
+.labeled-input-controls {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+}
+
+.castom-file-upload {
+  display: none;
+}
+
+.download {
+  padding: 12px 20px;
+  font-size: 16px;
+  letter-spacing: 0.32px;
+  font-weight: 500;
+  color: var(--blue-light);
+  font-family: "Montserrat", sans-serif;
+  background-color: transparent;
+  border: 2px solid var(--blue-light);
+}
+.download:hover {
+  cursor: pointer;
+  background-color: var(--blue-light);
+}
+.download:hover .btn-contour {
+  color: var(--gray-10);
+}
+.download:active {
+  transform: scale(95%);
+}
+
+.download:hover {
+  color: var(--gray-10);
+}
+
+.labeled-input__text {
+  color: var(--gray-60);
+  max-width: 222px;
+}
+
+.possibilities__questions {
+  border-bottom: 2px solid var(--gray-20);
+}
+
+.body-career-page .input-aria {
+  padding: 0;
+  padding-bottom: 16px;
+}
+
+.body-career-page .input-aria textarea {
+  padding: 14px 296px 62px 16px;
+  white-space: nowrap;
+}
+
+.submit-form {
+  padding: 16px 20px 13px 16px;
+  background-color: var(--bg-secondary-color);
+  border-radius: 4px;
+}
+.submit-form__text {
+  color: var(--gray-100);
+}
+.submit-form__link a {
+  color: var(--pink-80);
+}
+.submit-form__link a:hover {
+  color: var(--pink-100);
+}
+
+.block-controls-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  position: relative;
+  right: 256px;
+}
+
+.body-career-page .text-required {
+  padding-top: 0;
 }
 
 .body-portfolio-page .header-wrapper {

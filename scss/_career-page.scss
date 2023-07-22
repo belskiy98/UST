@@ -154,3 +154,176 @@
 .social-item img:hover {
     transform: scale(115%);
 }
+
+.possibilities {
+    background-image: url(../img/career-possib-bg.jpg);
+    background-size: cover;
+    padding-top: 112px;
+    padding-bottom: 504px;
+
+}
+
+.possibilities-col {
+
+    &__name {
+        @extend %H4;
+        color: var(--bg-secondary-color);
+        padding-bottom: 10px;
+    }
+
+    &__title {
+        @extend %H1-M;
+        color: var(--gray-10);
+        padding-bottom: 24px
+    }
+
+    &__text {
+        @extend %TXT-L;
+        color: var(--gray-10);
+        max-width: 996px;
+    }
+}
+
+.possibilities__information {
+    border-bottom: 2px solid var(--gray-20);
+}
+
+.possibilities-row {
+    position: relative;
+    bottom: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 992px;
+    margin: 0 auto;
+    background-color: var(--gray-10);
+    padding: 64px 124px;
+}
+
+.possibilities-block-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-bottom: 24px;
+}
+
+.form-information {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &__title {
+        @extend %H5;
+        color: var(--gray-100);
+        font-weight: 500;
+    }
+
+    &__text {
+        @extend %TXT-S;
+        color: var(--gray-80);
+        max-width: 369px;
+    }
+}
+
+.possibilities-survey-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.body-career-page .labeled-input-container {
+    padding: 0;
+}
+
+.body-career-page .labeled-input-container input {
+    padding: 14px 296px 14px 16px;
+}
+
+.possibilities__portfolio {
+    border-bottom: 2px solid var(--gray-20);
+}
+
+.labeled-input-controls {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+}
+
+.castom-file-upload {
+    display: none;
+}
+
+.download {
+    padding: 12px 20px;
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    font-weight: 500;
+    color: var(--blue-light);
+    @include btnContour();
+}
+
+.download:hover {
+    color: var(--gray-10);
+}
+
+.labeled-input {
+
+    &__text {
+        @extend %TXT-XS;
+        color: var(--gray-60);
+        max-width: 222px;
+    }
+}
+
+.possibilities__questions {
+    border-bottom: 2px solid var(--gray-20);
+}
+
+.body-career-page .input-aria {
+    padding: 0;
+    padding-bottom: 16px;
+}
+
+.body-career-page .input-aria textarea {
+    padding: 14px 296px 62px 16px;
+    white-space: nowrap;
+}
+
+.submit-form {
+    @extend %TXT-XS;
+    padding: 16px 20px 13px 16px;
+    background-color: var(--bg-secondary-color);
+    border-radius: 4px;
+
+    &__text {
+        color: var(--gray-100);
+    }
+
+    &__link a {
+        color: var(--pink-80);
+        @extend %transition;
+    }
+
+    &__link a:hover {
+        color: var(--pink-100);
+    }
+}
+
+.block-controls-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    position: relative;
+    right: 256px;
+}
+
+.body-career-page .text-required {
+    padding-top: 0;
+}
+
+
