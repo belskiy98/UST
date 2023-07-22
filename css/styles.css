@@ -2491,6 +2491,15 @@ h1 {
   font-family: var(--font-family-base);
 }
 
+@media (max-width: 576px) {
+  .body-project-page .hero__block {
+    padding-top: 80px;
+    padding-bottom: 146px;
+  }
+  .body-project-page .hero__text {
+    display: none;
+  }
+}
 .body-project-page .labeled-input-container {
   padding: 0;
 }
