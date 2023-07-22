@@ -184,8 +184,8 @@
     }
 }
 
-.possibilities__information {
-    border-bottom: 2px solid var(--gray-20);
+.possibilities-form {
+    margin-bottom: -290px;
 }
 
 .possibilities-row {
@@ -198,6 +198,10 @@
     margin: 0 auto;
     background-color: var(--gray-10);
     padding: 64px 124px;
+}
+
+.possibilities__information {
+    border-bottom: 2px solid var(--gray-20);
 }
 
 .possibilities-block-row {
@@ -319,7 +323,7 @@
     align-items: flex-end;
     gap: 10px;
     position: relative;
-    right: 256px;
+    right: 260px;
 }
 
 .body-career-page .text-required {
