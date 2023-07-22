@@ -2,23 +2,47 @@ window.addEventListener("DOMContentLoaded", function(){
 
     //increase in the number
 
-    function calcCount() {
-        for (let i = 0; i < $('.experience__num').length; i++) {
-            let end = $('.experience__num').eq(i).text();
-            countStart(end, i);
-        }
-    }
+    // function calcCount() {
+    //     for (let i = 0; i < $('.experience__num').length; i++) {
+    //         let end = $('.experience__num').eq(i).text();
+    //         countStart(end, i);
+    //     }
+    // }
     
-    function countStart(end, i) {
+    // function countStart(end, i) {
+    //     let start = 0;
+    //     let intervalOne = setInterval(function () {
+    //         $('.experience__num').eq(i).text(++start);
+    //         if (start == end) {
+    //             clearInterval(intervalOne);
+    //         }
+    //     }, 65);
+    // }
+    // calcCount();
+
+    const elements = document.querySelectorAll(".experience__num");
+    elements.forEach(function(element){
+        const end = element.innerText;
+        
         let start = 0;
-        let intervalOne = setInterval(function () {
-            $('.experience__num').eq(i).text(++start);
-            if (start == end) {
-                clearInterval(intervalOne);
+
+        let interval;
+
+        if(element.hasAttribute("data-interval")){
+            interval = Number(element.getAttribute("data-interval"));
+        } else {
+            interval = 3;
+        }
+
+        element.innerText = start;
+        const intervalId = setInterval(function(){
+            start += 1;
+            element.innerText = start;
+            if(start == end){
+                clearInterval(intervalId);
             }
-        }, 65);
-    }
-    calcCount();
+        }, interval);
+});
 
     //accordion
 
