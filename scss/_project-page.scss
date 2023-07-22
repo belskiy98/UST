@@ -31,7 +31,60 @@
     font-family: var(--font-family-base);
 }
 
-.body-project-page .hero__text {
+.body-project-page .labeled-input-container {
+    padding: 0;
+}
+
+.body-project-page .labeled-input-container input {
+    padding: 14px 296px 14px 16px;
+}
+
+.body-project-page .input-aria {
+    padding: 0;
+    padding-bottom: 16px;
+}
+
+.body-project-page .input-aria textarea {
+    padding: 14px 296px 62px 16px;
+    white-space: nowrap;
+}
+
+.body-project-page .text-required {
     padding-top: 0;
-    padding-bottom: 0;
+}
+
+@media (max-width:768px) {
+    .body-project-page .labeled-input-container input {
+        padding-right: 180px;
+    }
+
+    .body-project-page .input-aria textarea {
+        padding-right: 180px;
+    }
+}
+
+@media (max-width:667px) {
+    .body-project-page .labeled-input-container input {
+        padding-right: 120px;
+    }
+
+    .body-project-page .input-aria textarea {
+        padding-right: 120px;
+    }
+}
+
+@media (max-width:576px) {
+    .body-project-page .block-controls-row {
+        align-items: center;
+    }
+}
+
+@media (max-width:390px) {
+    .body-project-page .labeled-input-container input {
+        padding-right: 60px;
+    }
+
+    .body-project-page .input-aria textarea {
+        padding-right: 60px;
+    }
 }
