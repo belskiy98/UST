@@ -2153,6 +2153,80 @@ h1 {
   padding-top: 0;
 }
 
+@media (max-width: 1089px) {
+  .possibilities-block-row {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .possibilities-form {
+    margin-bottom: 0;
+  }
+  .possibilities-row {
+    position: static;
+  }
+  .possibilities-block-row {
+    justify-content: flex-start;
+  }
+  .block-controls-row {
+    position: static;
+    align-items: flex-start;
+  }
+  .labeled-input-controls {
+    flex-wrap: wrap;
+  }
+  .body-career-page .labeled-input-container input {
+    padding-right: 180px;
+  }
+  .body-career-page .input-aria textarea {
+    padding-right: 180px;
+  }
+}
+@media (max-width: 667px) {
+  .body-career-page .labeled-input-container input {
+    padding-right: 120px;
+  }
+  .body-career-page .input-aria textarea {
+    padding-right: 120px;
+  }
+}
+@media (max-width: 576px) {
+  .career-vacancies {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .possibilities {
+    padding-top: 40px;
+    padding-bottom: 64px;
+    background-position: center;
+  }
+  .possibilities-form {
+    background-color: var(--gray-10);
+  }
+  .possibilities-row {
+    padding: 40px 16px;
+    gap: 30px;
+  }
+  .possibilities-block-row {
+    gap: 16px;
+  }
+  .download {
+    font-size: 14px;
+    letter-spacing: 0.28px;
+    padding: 8px 16px;
+  }
+  .body-career-page .block-controls-row {
+    align-items: center;
+  }
+}
+@media (max-width: 390px) {
+  .body-career-page .labeled-input-container input {
+    padding-right: 60px;
+  }
+  .body-career-page .input-aria textarea {
+    padding-right: 60px;
+  }
+}
 .body-portfolio-page .header-wrapper {
   background-color: black;
   background-image: url(../img/portfolio-bg-header.jpg);
